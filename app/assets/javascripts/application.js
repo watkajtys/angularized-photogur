@@ -11,5 +11,6 @@
 // GO AFTER THE REQUIRES BELOW.
 //
 //= require jquery
+//= require hamlcoffee
 //= require angular
 //= require angular-resource
