@@ -3,6 +3,8 @@
 
 %h2 {{pictures[0].title}}
 %h3 {{pictures[0].artist}}
+%p{:"ng-show" => "name == 'homer'"} {{name}} simpson
+%p{:"ng-show" => "name != 'homer'"} {{name}}
 
 %p {{name}}
 %input{:"ng-model" => "name"}
