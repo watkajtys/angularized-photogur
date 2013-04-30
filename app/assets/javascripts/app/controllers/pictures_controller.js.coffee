@@ -1,6 +1,4 @@
 @photogur.controller("PicturesController", ($scope, Picture) ->
-   
-   # $scope.newPicture = {}
 
    $scope.pictures = Picture.query(
       (data) ->
@@ -10,6 +8,13 @@
          alert("Could not retrieve post data")
    )
 
-   $scope.showTitle = ->
-      alert $scope.newPicture.title
+   $scope.savePicture = ->
+      console.log "The picture is ", $scope.newPicture
+      Picture.save($scope.newPicture, 
+         (data) -> 
+            console.log("success")
+         ,(response) -> 
+            $scope.errors = response.data.errors
+      )
+
 )
