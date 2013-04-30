@@ -16,5 +16,4 @@
       (data) ->
          alert("Could not retrieve post data")
    )
-   window.Picture = Picture
 )

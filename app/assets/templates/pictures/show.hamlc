@@ -1,3 +1,5 @@
+%div.error{:"ng-show" => 'errorMessage'}
+   {{errorMessage}}
 %h1 {{picture.title}}
 %h2 by {{picture.artist}}
 %img{:"ng-src" => "{{picture.url}}"}
