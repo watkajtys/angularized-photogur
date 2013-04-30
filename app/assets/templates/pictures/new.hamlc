@@ -1,1 +1,8 @@
-%h1 This is new.hamlc
+%h1 New Picture
+
+%p
+   %label Title
+   %br
+   %input{:type => "text", :"ng-model" => "newPicture.title"}
+
+%button{:"ng-click" => "showTitle()"} Show Title
