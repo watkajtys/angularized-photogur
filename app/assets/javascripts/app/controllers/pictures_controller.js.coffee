@@ -9,5 +9,12 @@
    # $scope.isHomer = ->
    #    return $scope.name.toLowerCase() == 'homer'
 
-   $scope.pictures = Picture.query()
+   $scope.pictures = Picture.query(
+      (data) ->
+         console.log('success!')
+      , 
+      (data) ->
+         alert("Could not retrieve post data")
+   )
+   window.Picture = Picture
 )
